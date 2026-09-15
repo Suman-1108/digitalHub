@@ -7,13 +7,13 @@
 
 ## 🎨 Design System & Color Palette
 
-Kaira DigitalHub incorporates an authentic **Udemy-style marketplace experience** enhanced by **3D perspective depth cues** and a curated modern color palette:
+Kaira DigitalHub incorporates an authentic **Kaira-style marketplace experience** enhanced by **3D perspective depth cues** and a curated modern color palette:
 
 | Color Token | Hex Code | Purpose & Usage |
 | :--- | :--- | :--- |
 | **Electric Blue** | `#30AFFF` | Primary CTA buttons, active tabs, focus borders, primary brand accents |
 | **Luminous Cyan** | `#92EEFF` | Secondary highlights, "Highest Rated" pills, glowing ambient orbs |
-| **Mint Green** | `#D8FFC5` | Udemy-style **"Bestseller"** badges, review highlights, success alerts |
+| **Mint Green** | `#D8FFC5` | Kaira-style **"Bestseller"** badges, review highlights, success alerts |
 | **Mint Pastel** | `#C4F7CA` | Technology stack tags, metric indicators, pill highlights |
 | **Charcoal / Black** | `#070D18` / `#1C1D1F` | Bold headings, high-contrast text, dark billboard accents, footer |
 | **Clean White** | `#FFFFFF` / `#F8FAFC` | Crisp marketplace cards, input surfaces, and light backdrop |
@@ -22,10 +22,10 @@ Kaira DigitalHub incorporates an authentic **Udemy-style marketplace experience*
 
 ## ✨ Platform Features
 
-### 🎓 1. Udemy-Style Academy Marketplace
+### 🎓 1. Kaira-Style Academy Marketplace
 - **Central Search Engine**: Wide search input in the navigation bar supporting real-time skill & course filtering via URL queries.
 - **Categorized Tabs**: Quick filtering across *Web Development*, *AI & Data*, *Cloud & DevOps*, *Mobile Apps*, and *Cybersecurity*.
-- **Udemy Course Cards**:
+- **Kaira Course Cards**:
   - 16:9 visual thumbnail banner with difficulty tag and duration
   - **"Bestseller"** / **"Highest Rated"** badges in `#D8FFC5` and `#92EEFF`
   - 5-star golden rating score (`4.9 ★★★★★`) with review counts
@@ -76,10 +76,10 @@ digitalhub/
 │   │   │
 │   │   ├── components/
 │   │   │   ├── Common/
-│   │   │   │   ├── Navbar.jsx     ← Udemy-Style Header with Logo & Search
+│   │   │   │   ├── Navbar.jsx     ← Kaira-Style Header with Logo & Search
 │   │   │   │   └── Footer.jsx     ← Clean Dark Footer with Social Links
 │   │   │   │
-│   │   │   ├── CourseCard.jsx     ← Udemy Course Card Component
+│   │   │   ├── CourseCard.jsx     ← Kaira Course Card Component
 │   │   │   ├── ServiceCard.jsx    ← Enterprise Service Card Component
 │   │   │   ├── EventCard.jsx      ← Event & Hackathon Card Component
 │   │   │   ├── ProjectCard.jsx    ← Portfolio Showcase Card Component

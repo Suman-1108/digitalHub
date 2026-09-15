@@ -59,7 +59,7 @@ const Navbar = ({ onOpenEnquiry }) => {
             </div>
           </Link>
 
-          {/* Explore / Categories Dropdown (Udemy Style) */}
+          {/* Explore / Categories Dropdown (Kaira Style) */}
           <Link
             to="/courses"
             className="hidden lg:flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-gray-700 hover:text-[#30AFFF] transition-colors rounded-lg hover:bg-gray-50 shrink-0"
@@ -68,7 +68,7 @@ const Navbar = ({ onOpenEnquiry }) => {
             <span>Explore</span>
           </Link>
 
-          {/* Udemy-style Wide Central Search Bar */}
+          {/* Kaira-style Wide Central Search Bar */}
           <form
             onSubmit={handleSearchSubmit}
             className="hidden md:flex flex-1 max-w-xl relative items-center"
@@ -89,11 +89,10 @@ const Navbar = ({ onOpenEnquiry }) => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`px-3 py-2 rounded-lg text-xs font-bold transition-colors ${
-                  isActive(link.path)
+                className={`px-3 py-2 rounded-lg text-xs font-bold transition-colors ${isActive(link.path)
                     ? 'text-[#30AFFF] bg-[#30AFFF]/10'
                     : 'text-gray-700 hover:text-[#30AFFF] hover:bg-gray-50'
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -153,11 +152,10 @@ const Navbar = ({ onOpenEnquiry }) => {
               key={link.name}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2.5 rounded-lg text-sm font-semibold ${
-                isActive(link.path)
+              className={`block px-3 py-2.5 rounded-lg text-sm font-semibold ${isActive(link.path)
                   ? 'text-[#30AFFF] bg-[#30AFFF]/10'
                   : 'text-gray-700 hover:bg-gray-50'
-              }`}
+                }`}
             >
               {link.name}
             </Link>

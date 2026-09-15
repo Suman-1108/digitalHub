@@ -96,11 +96,10 @@ const Events = ({ onRegisterEvent }) => {
               <button
                 key={cat}
                 onClick={() => setFilterType(cat)}
-                className={`px-4 py-2 text-xs font-bold whitespace-nowrap transition-colors rounded-t-lg ${
-                  filterType === cat
+                className={`px-4 py-2 text-xs font-bold whitespace-nowrap transition-colors rounded-t-lg ${filterType === cat
                     ? 'text-[#30AFFF] border-b-2 border-[#30AFFF] font-black'
                     : 'text-gray-600 hover:text-[#1C1D1F]'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -128,7 +127,7 @@ const Events = ({ onRegisterEvent }) => {
           </div>
           <button
             onClick={() => onRegisterEvent({ title: 'Hackathon / Event Sponsor Inquiry' })}
-            className="btn-udemy-primary text-xs shrink-0"
+            className="btn-Kaira-primary text-xs shrink-0"
           >
             Become a Partner Sponsor
           </button>

@@ -261,7 +261,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-3 rounded-lg text-xs font-bold btn-udemy-primary disabled:opacity-50"
+                  className="w-full py-3 rounded-lg text-xs font-bold btn-Kaira-primary disabled:opacity-50"
                 >
                   {loading ? 'Sending Message...' : 'Submit Inquiry'}
                 </button>
@@ -282,9 +282,8 @@ const Contact = () => {
                 >
                   <span>{faq.q}</span>
                   <ChevronDown
-                    className={`w-4 h-4 text-gray-400 transition-transform ${
-                      openFaq === idx ? 'rotate-180 text-[#30AFFF]' : ''
-                    }`}
+                    className={`w-4 h-4 text-gray-400 transition-transform ${openFaq === idx ? 'rotate-180 text-[#30AFFF]' : ''
+                      }`}
                   />
                 </button>
                 {openFaq === idx && (

@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const ServiceCard = ({ icon: Icon, title, description, features = [], badge, onEnquire }) => {
   return (
-    <div className="udemy-card p-6 sm:p-7 flex flex-col justify-between group hover:border-[#30AFFF] transition-all">
+    <div className="Kaira-card p-6 sm:p-7 flex flex-col justify-between group hover:border-[#30AFFF] transition-all">
       <div>
         {/* Top Icon & Badge */}
         <div className="flex items-center justify-between mb-5">

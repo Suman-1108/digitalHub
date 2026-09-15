@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#070D18] text-white border-t border-gray-800 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top partner strip (Udemy Style) */}
+        {/* Top partner strip (Kaira Style) */}
         <div className="pb-12 border-b border-gray-800/80 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h4 className="text-base font-bold text-white">

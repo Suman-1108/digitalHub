@@ -125,11 +125,10 @@ const Services = ({ onOpenEnquiry }) => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 text-xs font-bold whitespace-nowrap transition-colors rounded-t-lg ${
-                  activeCategory === cat
+                className={`px-4 py-2 text-xs font-bold whitespace-nowrap transition-colors rounded-t-lg ${activeCategory === cat
                     ? 'text-[#30AFFF] border-b-2 border-[#30AFFF] font-black'
                     : 'text-gray-600 hover:text-[#1C1D1F]'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -192,7 +191,7 @@ const Services = ({ onOpenEnquiry }) => {
           </div>
           <button
             onClick={() => onOpenEnquiry('Custom Enterprise Architecture')}
-            className="btn-udemy-primary text-xs shrink-0"
+            className="btn-Kaira-primary text-xs shrink-0"
           >
             <span>Request Architectural Discovery</span>
             <ArrowRight className="w-4 h-4" />

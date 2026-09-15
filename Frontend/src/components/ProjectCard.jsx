@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <div className="udemy-card p-6 flex flex-col justify-between group hover:border-[#30AFFF] transition-all">
+    <div className="Kaira-card p-6 flex flex-col justify-between group hover:border-[#30AFFF] transition-all">
       <div>
         {/* Category & Metric */}
         <div className="flex items-center justify-between gap-2 mb-3">

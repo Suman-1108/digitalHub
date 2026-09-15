@@ -142,7 +142,7 @@ const RegistrationModal = ({ isOpen, onClose, targetItem = null, type = 'course'
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-3 rounded-lg text-xs font-bold btn-udemy-primary disabled:opacity-50"
+                  className="w-full py-3 rounded-lg text-xs font-bold btn-Kaira-primary disabled:opacity-50"
                 >
                   {loading ? 'Confirming...' : type === 'course' ? 'Complete Enrollment' : 'Reserve Free Seat'}
                 </button>

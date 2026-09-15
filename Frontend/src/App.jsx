@@ -52,7 +52,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="min-h-screen bg-[#F8FAFC] text-[#1C1D1F] flex flex-col font-sans selection:bg-[#30AFFF] selection:text-black">
-        {/* Udemy-Style Navigation Header */}
+        {/* Kaira-Style Navigation Header */}
         <Navbar onOpenEnquiry={() => handleOpenEnquiry('General Consultation')} />
 
         {/* Dynamic Pages */}
@@ -85,7 +85,7 @@ function App() {
           </Routes>
         </main>
 
-        {/* Udemy-Style Footer (Without Admin) */}
+        {/* Kaira-Style Footer (Without Admin) */}
         <Footer />
 
         {/* Shared Modals */}

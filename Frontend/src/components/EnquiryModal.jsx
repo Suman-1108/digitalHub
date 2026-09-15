@@ -162,7 +162,7 @@ const EnquiryModal = ({ isOpen, onClose, initialService = '' }) => {
             <button
               type="submit"
               disabled={loading}
-              className="btn-udemy-primary disabled:opacity-50"
+              className="btn-Kaira-primary disabled:opacity-50"
             >
               {loading ? 'Submitting...' : 'Send Request'}
             </button>

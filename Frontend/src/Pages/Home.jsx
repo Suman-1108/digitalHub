@@ -28,7 +28,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [heroSearch, setHeroSearch] = useState('');
 
-  // Udemy-style courses data
+  // Kaira-style courses data
   const allCourses = [
     {
       id: 1,
@@ -222,7 +222,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
 
   return (
     <div className="bg-[#F8FAFC]">
-      {/* 1. UDEMY STYLE HERO BILLBOARD BANNER WITH 3D SHOWCASE */}
+      {/* 1. Kaira STYLE HERO BILLBOARD BANNER WITH 3D SHOWCASE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
         <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#070D18] via-[#0D192E] to-[#122340] min-h-[460px] flex items-center p-6 sm:p-10 lg:p-14 text-white shadow-2xl border border-gray-800/80">
           {/* Ambient Glows */}
@@ -230,7 +230,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
           <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-[#D8FFC5]/15 rounded-full blur-3xl pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center w-full relative z-10">
-            {/* Left: Classic Udemy Billboard Card */}
+            {/* Left: Classic Kaira Billboard Card */}
             <div className="lg:col-span-7 bg-white text-[#1C1D1F] p-6 sm:p-8 rounded-2xl shadow-2xl space-y-4 border border-gray-100">
               <div className="flex items-center gap-2">
                 <span className="badge-popular">
@@ -249,14 +249,14 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Link
                   to="/courses"
-                  className="btn-udemy-primary text-xs"
+                  className="btn-Kaira-primary text-xs"
                 >
                   <span>Browse Academy Courses</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <button
                   onClick={() => onOpenEnquiry('Consultation Inquiry')}
-                  className="btn-udemy-outline text-xs"
+                  className="btn-Kaira-outline text-xs"
                 >
                   Get Tech Consultation
                 </button>
@@ -325,7 +325,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
         </div>
       </section>
 
-      {/* 2. UDEMY VALUE PROPOSITION STRIP */}
+      {/* 2. Kaira VALUE PROPOSITION STRIP */}
       <section className="bg-white border-y border-gray-200 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -372,7 +372,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
         </div>
       </section>
 
-      {/* 3. UDEMY STYLE COURSE SELECTION TABS & CAROUSEL */}
+      {/* 3. Kaira STYLE COURSE SELECTION TABS & CAROUSEL */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="space-y-2 mb-6">
           <h2 className="text-2xl sm:text-3xl font-black text-[#1C1D1F]">
@@ -383,17 +383,16 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
           </p>
         </div>
 
-        {/* Category Tabs (Udemy Style) */}
+        {/* Category Tabs (Kaira Style) */}
         <div className="flex items-center gap-2 overflow-x-auto border-b border-gray-200 pb-2 mb-8">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 text-xs font-bold whitespace-nowrap transition-colors rounded-t-lg ${
-                selectedCategory === cat
+              className={`px-4 py-2 text-xs font-bold whitespace-nowrap transition-colors rounded-t-lg ${selectedCategory === cat
                   ? 'text-[#30AFFF] border-b-2 border-[#30AFFF] font-black'
                   : 'text-gray-600 hover:text-[#1C1D1F]'
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -430,7 +429,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
         </div>
       </section>
 
-      {/* 4. UDEMY BUSINESS / ENTERPRISE SOLUTIONS SECTION */}
+      {/* 4. Kaira BUSINESS / ENTERPRISE SOLUTIONS SECTION */}
       <section className="bg-white border-t border-gray-200 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
@@ -504,7 +503,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
         </div>
       </section>
 
-      {/* 6. UDEMY STYLE SOCIAL PROOF / TESTIMONIALS */}
+      {/* 6. Kaira STYLE SOCIAL PROOF / TESTIMONIALS */}
       <section className="bg-white border-y border-gray-200 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -520,7 +519,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
             {testimonials.map((t, idx) => (
               <div
                 key={idx}
-                className="udemy-card p-6 flex flex-col justify-between"
+                className="Kaira-card p-6 flex flex-col justify-between"
               >
                 <div className="space-y-3">
                   <div className="flex items-center text-amber-500">
@@ -548,7 +547,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
         </div>
       </section>
 
-      {/* 7. UDEMY STYLE BOTTOM BILLBOARD "BECOME AN INSTRUCTOR / PARTNER" */}
+      {/* 7. Kaira STYLE BOTTOM BILLBOARD "BECOME AN INSTRUCTOR / PARTNER" */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="rounded-2xl bg-gradient-to-r from-[#070D18] to-[#142642] p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
           <div className="space-y-3 max-w-xl">
@@ -565,7 +564,7 @@ const Home = ({ onOpenEnquiry, onEnrollCourse, onRegisterEvent }) => {
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <button
               onClick={() => onOpenEnquiry('Instructor / Partner Application')}
-              className="btn-udemy-primary text-xs"
+              className="btn-Kaira-primary text-xs"
             >
               Apply as Instructor / Partner
             </button>

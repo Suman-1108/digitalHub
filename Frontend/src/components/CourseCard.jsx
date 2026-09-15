@@ -20,7 +20,7 @@ const CourseCard = ({ course, onEnroll }) => {
   return (
     <div
       onClick={() => onEnroll && onEnroll(course)}
-      className="udemy-card group flex flex-col justify-between overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-200"
+      className="Kaira-card group flex flex-col justify-between overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-200"
     >
       <div>
         {/* Course Thumbnail Banner */}
@@ -54,7 +54,7 @@ const CourseCard = ({ course, onEnroll }) => {
           </div>
         </div>
 
-        {/* Content Details (Udemy Typography) */}
+        {/* Content Details (Kaira Typography) */}
         <div className="p-4 space-y-1.5">
           {/* Title */}
           <h3 className="text-sm sm:text-base font-bold text-[#1C1D1F] line-clamp-2 leading-snug group-hover:text-[#30AFFF] transition-colors">
